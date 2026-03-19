@@ -1,3 +1,4 @@
+// Navigation configuration for ESUP SANTÉ - v1.0.1
 // An array of links for navigation bar
 const navBarLinks = [
   { name: "Accueil", url: "/" },
