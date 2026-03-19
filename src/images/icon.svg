@@ -1,8 +1,148 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="-0.00585938" y="-0.000488281" width="512" height="512" rx="100" fill="#262626"/>
-<rect x="20.9297" y="109.01" width="173.138" height="40.5431" rx="20.2715" transform="rotate(0.0432252 20.9297 109.01)" fill="#FACC15"/>
-<rect x="100.982" y="183.969" width="173.138" height="40.5431" rx="20.2715" transform="rotate(0.0432252 100.982 183.969)" fill="#FACC15"/>
-<rect x="181.491" y="259.354" width="173.138" height="40.5431" rx="20.2715" transform="rotate(0.0432252 181.491 259.354)" fill="#FACC15"/>
-<rect x="261.998" y="334.739" width="62.4311" height="40.5431" rx="20.2715" transform="rotate(0.0432252 261.998 334.739)" fill="#FACC15"/>
-<path d="M442.513 435.922C445.843 442.651 438.906 449.847 432.059 446.766L355.339 412.235C350.291 409.962 349.021 403.373 352.863 399.387L392.264 358.515C396.106 354.53 402.737 355.557 405.193 360.519L442.513 435.922Z" fill="#FACC15"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260">
+  <defs>
+    <style>
+      .red   { fill: #c0392b; }
+      .green { fill: #1e8449; }
+      .dkgreen { fill: #155d32; }
+      .white { fill: #ffffff; }
+      .text-red { fill: #c0392b; font-family: 'Georgia', serif; }
+      .text-green { fill: #1e8449; font-family: 'Georgia', serif; }
+      .text-dark { fill: #0b3d20; font-family: 'Georgia', serif; }
+    </style>
+  </defs>
+
+  <!-- ─────────────────────────────── -->
+  <!-- TOP RED ARC BANNER              -->
+  <!-- ─────────────────────────────── -->
+  <!-- Arc path: ribbon curving over top of circle -->
+  <path d="M 50,115 Q 130,30 210,115" fill="none" stroke="#c0392b" stroke-width="18" stroke-linecap="round"/>
+  <!-- White text on arc: école supérieure / de formation -->
+  <path id="arcTop" d="M 52,114 Q 130,32 208,114" fill="none"/>
+  <text font-size="9" font-family="Arial, sans-serif" fill="white" font-weight="700" letter-spacing="1">
+    <textPath href="#arcTop" startOffset="8%">ÉCOLE SUPÉRIEURE · DE FORMATION</textPath>
+  </text>
+
+  <!-- ─────────────────────────────── -->
+  <!-- OUTER CIRCLE (subtle border)    -->
+  <!-- ─────────────────────────────── -->
+  <circle cx="130" cy="135" r="85" fill="white" stroke="#1e8449" stroke-width="2.5" opacity="0.15"/>
+
+  <!-- ─────────────────────────────── -->
+  <!-- LAUREL BRANCHES - LEFT          -->
+  <!-- ─────────────────────────────── -->
+  <!-- Left branch: series of elliptical leaves -->
+  <g transform="translate(57, 90) rotate(-30)" class="green">
+    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(48, 108) rotate(-45)" class="green">
+    <ellipse cx="0" cy="0" rx="13" ry="6" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(44, 127) rotate(-55)" class="green">
+    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(47, 146) rotate(-65)" class="green">
+    <ellipse cx="0" cy="0" rx="12" ry="5.5" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(55, 163) rotate(-75)" class="green">
+    <ellipse cx="0" cy="0" rx="11" ry="5" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(66, 178) rotate(-85)" class="green">
+    <ellipse cx="0" cy="0" rx="10" ry="5" fill="#1e8449" opacity="0.85"/>
+  </g>
+  <!-- Stem left -->
+  <path d="M 65,80 Q 49,130 75,185" fill="none" stroke="#155d32" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- ─────────────────────────────── -->
+  <!-- LAUREL BRANCHES - RIGHT         -->
+  <!-- ─────────────────────────────── -->
+  <g transform="translate(203, 90) rotate(30)" class="green">
+    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(212, 108) rotate(45)" class="green">
+    <ellipse cx="0" cy="0" rx="13" ry="6" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(216, 127) rotate(55)" class="green">
+    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(213, 146) rotate(65)" class="green">
+    <ellipse cx="0" cy="0" rx="12" ry="5.5" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(205, 163) rotate(75)" class="green">
+    <ellipse cx="0" cy="0" rx="11" ry="5" fill="#1e8449" opacity="0.9"/>
+  </g>
+  <g transform="translate(194, 178) rotate(85)" class="green">
+    <ellipse cx="0" cy="0" rx="10" ry="5" fill="#1e8449" opacity="0.85"/>
+  </g>
+  <!-- Stem right -->
+  <path d="M 195,80 Q 211,130 185,185" fill="none" stroke="#155d32" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- ─────────────────────────────── -->
+  <!-- CADUCEE - Staff                 -->
+  <!-- ─────────────────────────────── -->
+  <!-- Main rod -->
+  <rect x="127" y="78" width="6" height="95" rx="3" fill="#1e8449"/>
+
+  <!-- Wings at top (simplified) -->
+  <path d="M 130,80 Q 105,68 100,80 Q 107,88 130,84" fill="#1e8449"/>
+  <path d="M 130,80 Q 155,68 160,80 Q 153,88 130,84" fill="#1e8449"/>
+
+  <!-- Snake 1 (left wrap) — simplified S-curve -->
+  <path d="M 130,95 Q 112,103 113,113 Q 114,123 130,127 Q 146,131 147,141 Q 148,151 130,158 Q 115,163 113,170"
+        fill="none" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Snake 2 (right wrap) -->
+  <path d="M 130,95 Q 148,103 147,113 Q 146,123 130,127 Q 114,131 113,141 Q 112,151 130,158 Q 145,163 147,170"
+        fill="none" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Snake heads at bottom -->
+  <ellipse cx="113" cy="172" rx="7" ry="5" fill="#c0392b" transform="rotate(-10,113,172)"/>
+  <ellipse cx="147" cy="172" rx="7" ry="5" fill="#c0392b" transform="rotate(10,147,172)"/>
+
+  <!-- Knot in center of caduceus -->
+  <ellipse cx="130" cy="127" rx="8" ry="6" fill="#1e8449"/>
+
+  <!-- ─────────────────────────────── -->
+  <!-- ESUP | SANTÉ text               -->
+  <!-- ─────────────────────────────── -->
+  <!-- Left of staff: ESUP -->
+  <text x="100" y="140" font-family="'Georgia', serif" font-size="15" font-weight="900"
+        fill="#1e8449" text-anchor="middle" letter-spacing="1">ESUP</text>
+
+  <!-- Right of staff: SANTÉ -->
+  <text x="162" y="140" font-family="'Georgia', serif" font-size="15" font-weight="900"
+        fill="#c0392b" text-anchor="middle" letter-spacing="1">SANTÉ</text>
+
+  <!-- ─────────────────────────────── -->
+  <!-- OPEN BOOK at bottom             -->
+  <!-- ─────────────────────────────── -->
+  <!-- Book spine -->
+  <rect x="127" y="178" width="6" height="32" rx="2" fill="#155d32"/>
+
+  <!-- Left page -->
+  <path d="M 130,180 Q 95,182 82,192 Q 80,200 82,210 Q 95,215 130,210 Z"
+        fill="#27ae60" stroke="#155d32" stroke-width="1.5"/>
+
+  <!-- Right page -->
+  <path d="M 130,180 Q 165,182 178,192 Q 180,200 178,210 Q 165,215 130,210 Z"
+        fill="#27ae60" stroke="#155d32" stroke-width="1.5"/>
+
+  <!-- Book pages - lines on left -->
+  <line x1="96" y1="193" x2="124" y2="191" stroke="#155d32" stroke-width="1" opacity="0.5"/>
+  <line x1="96" y1="199" x2="124" y2="197" stroke="#155d32" stroke-width="1" opacity="0.5"/>
+  <line x1="96" y1="205" x2="124" y2="204" stroke="#155d32" stroke-width="1" opacity="0.5"/>
+
+  <!-- Book pages - lines on right -->
+  <line x1="164" y1="193" x2="136" y2="191" stroke="#155d32" stroke-width="1" opacity="0.5"/>
+  <line x1="164" y1="199" x2="136" y2="197" stroke="#155d32" stroke-width="1" opacity="0.5"/>
+  <line x1="164" y1="205" x2="136" y2="204" stroke="#155d32" stroke-width="1" opacity="0.5"/>
+
+  <!-- Book cover / bottom layer -->
+  <path d="M 80,207 Q 95,218 130,215 Q 165,218 180,207 L 178,212 Q 165,224 130,221 Q 95,224 82,212 Z"
+        fill="#155d32"/>
+
+  <!-- ─────────────────────────────── -->
+  <!-- BOTTOM TEXT: Professionnelle    -->
+  <!-- ─────────────────────────────── -->
+  <text x="130" y="242" font-family="Arial, sans-serif" font-size="7.5" font-weight="700"
+        fill="#1e8449" text-anchor="middle" letter-spacing="1.5">PROFESSIONNELLE EN SANTÉ</text>
 </svg>
