@@ -1,22 +1,17 @@
 [
   {
-    "heading": "Dedicated Teams",
-    "content": "Benefit from our committed teams who ensure your success is personal. Count on expert guidance and exceptional results throughout your project journey.",
-    "svg": "groups"
+    "heading": "Formation d'excellence",
+    "content": "Des programmes accrédités conçus pour former des professionnels de santé compétents et engagés.",
+    "svg": "tools"
   },
   {
-    "heading": "Simplicity and Affordability",
-    "content": "Find easy-to-use, affordable solutions with ScrewFast's line of tools and equipment. Our products make procurement simple and keep projects within budget.",
-    "svg": "verified"
+    "heading": "Immersion clinique",
+    "content": "Stages en milieu hospitalier dès la première année pour une expérience terrain concrète.",
+    "svg": "dashboard"
   },
   {
-    "heading": "Comprehensive Documentation",
-    "content": "Integrate with ease using ScrewFast's exhaustive guides and libraries. Achieve seamless product adoption with our full suite of documentation designed for your success.",
-    "svg": "books"
-  },
-  {
-    "heading": "User-Centric Design",
-    "content": "Experience the difference with ScrewFast's user-focused design — where functionality meets practicality for an enhanced work experience.",
-    "svg": "frame"
+    "heading": "Rayonnement régional",
+    "content": "Des diplômés qui exercent dans tout le Sénégal et en Afrique de l'Ouest.",
+    "svg": "house"
   }
 ]

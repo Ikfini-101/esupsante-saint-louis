@@ -1,0 +1,129 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import { SITE } from "@data/constants";
+
+// Import gallery images
+import img01 from "@images/gallery/01-blouses-roses.jpg";
+import img02 from "@images/gallery/02-etudiantes-convivialite.jpg";
+import img03 from "@images/gallery/03-etudiant-stethoscope.jpg";
+import img04 from "@images/gallery/04-stage-hopital.jpg";
+import img05 from "@images/gallery/05-classe-chirurgie.jpg";
+import img06 from "@images/gallery/06-facade-campus.jpg";
+import img07 from "@images/gallery/07-groupe-campus.jpg";
+import img08 from "@images/gallery/08-reunion-conseil.jpg";
+import img09 from "@images/gallery/09-journee-assemblee.jpg";
+import img10 from "@images/gallery/10-discours-officiel.jpg";
+import img11 from "@images/gallery/11-facade-actuelle.jpg";
+import img12 from "@images/gallery/12-photo-groupe-officielle.jpg";
+
+const galleryImages = [
+  { src: img01, alt: "Étudiantes en blouses roses ESUP SANTÉ", category: "campus", caption: "Promotion d'étudiantes — blouses roses ESUP SANTÉ" },
+  { src: img11, alt: "Façade actuelle du campus ESUP SANTÉ", category: "campus", caption: "Façade actuelle — ESUP SANTÉ Saint-Louis" },
+  { src: img03, alt: "Étudiant avec stéthoscope", category: "formation", caption: "Étudiant en formation clinique" },
+  { src: img04, alt: "Étudiants en stage hospitalier", category: "formation", caption: "Stage en milieu hospitalier" },
+  { src: img05, alt: "Cours de chirurgie en classe", category: "formation", caption: "Cours de chirurgie — salle de classe" },
+  { src: img06, alt: "Ancienne façade du campus", category: "campus", caption: "Campus historique — Ndioloffène" },
+  { src: img07, alt: "Groupe d'étudiants devant le campus", category: "campus", caption: "Étudiants devant le campus ESUP SANTÉ" },
+  { src: img02, alt: "Étudiantes en tenue civile", category: "evenement", caption: "Convivialité entre étudiantes" },
+  { src: img08, alt: "Réunion du conseil", category: "evenement", caption: "Réunion du corps enseignant" },
+  { src: img09, alt: "Assemblée journée spéciale", category: "evenement", caption: "Journée de sensibilisation — assemblée" },
+  { src: img10, alt: "Discours officiel", category: "evenement", caption: "Prise de parole lors d'un événement" },
+  { src: img12, alt: "Photo de groupe officielle", category: "evenement", caption: "Photo de groupe — événement officiel" },
+];
+
+const pageTitle: string = `Galerie | ${SITE.title}`;
+const metaDescription = "Explorez la vie étudiante à ESUP SANTÉ : campus, cours, stages hospitaliers et événements à Saint-Louis.";
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={`Galerie | ${SITE.title}`}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE.url}/galerie`,
+    url: `${SITE.url}/galerie`,
+    name: `Galerie | ${SITE.title}`,
+    description: metaDescription,
+    isPartOf: {
+      "@type": "WebSite",
+      url: SITE.url,
+      name: SITE.title,
+      description: SITE.description,
+    },
+    inLanguage: "fr-FR",
+  }}
+>
+  <!-- Hero Section -->
+  <section class="mx-auto max-w-[85rem] px-4 py-14 sm:px-6 lg:px-8 lg:py-20 2xl:max-w-full">
+    <div class="mx-auto mb-10 max-w-3xl text-center">
+      <h1 class="block text-balance text-4xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-5xl lg:text-6xl">
+        Notre <span class="text-yellow-500 dark:text-yellow-400">Galerie</span>
+      </h1>
+      <p class="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
+        Découvrez la vie à ESUP SANTÉ — entre cours, stages et moments de convivialité.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="mb-10 flex flex-wrap justify-center gap-3" id="gallery-filters">
+      <button data-filter="all" class="gallery-filter-btn active rounded-full bg-neutral-800 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-yellow-500 dark:bg-neutral-200 dark:text-neutral-800 dark:hover:bg-yellow-400">Tous</button>
+      <button data-filter="campus" class="gallery-filter-btn rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-neutral-700 transition-all hover:bg-neutral-800 hover:text-white dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-200 dark:hover:text-neutral-800">Campus</button>
+      <button data-filter="formation" class="gallery-filter-btn rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-neutral-700 transition-all hover:bg-neutral-800 hover:text-white dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-200 dark:hover:text-neutral-800">Formation</button>
+      <button data-filter="evenement" class="gallery-filter-btn rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-neutral-700 transition-all hover:bg-neutral-800 hover:text-white dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-200 dark:hover:text-neutral-800">Événements</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3" id="gallery-grid">
+      {galleryImages.map((image) => (
+        <div class="gallery-item group relative cursor-pointer overflow-hidden rounded-xl" data-category={image.category}>
+          <Image
+            src={image.src}
+            alt={image.alt}
+            class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+            widths={[400, 600]}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="p-4 text-sm font-medium text-white">
+              {image.caption}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filterBtns = document.querySelectorAll(".gallery-filter-btn");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter");
+
+          // Update active state
+          filterBtns.forEach((b) => {
+            b.classList.remove("active", "bg-neutral-800", "text-white", "dark:bg-neutral-200", "dark:text-neutral-800");
+            b.classList.add("border", "border-neutral-300", "text-neutral-700", "dark:border-neutral-600", "dark:text-neutral-300");
+          });
+          btn.classList.add("active", "bg-neutral-800", "text-white", "dark:bg-neutral-200", "dark:text-neutral-800");
+          btn.classList.remove("border", "border-neutral-300", "text-neutral-700", "dark:border-neutral-600", "dark:text-neutral-300");
+
+          // Filter items
+          galleryItems.forEach((item) => {
+            const category = item.getAttribute("data-category");
+            if (filter === "all" || category === filter) {
+              (item as HTMLElement).style.display = "block";
+            } else {
+              (item as HTMLElement).style.display = "none";
+            }
+          });
+        });
+      });
+    });
+  </script>
+</MainLayout>

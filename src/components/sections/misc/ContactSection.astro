@@ -9,11 +9,11 @@ import TextAreaInput from "@components/ui/forms/input/TextAreaInput.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 
 // Define the variables that will be used in this component
-const title: string = "Contact us";
+const title: string = "Contactez-nous";
 const subTitle: string =
-  "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.";
-const formTitle: string = "Fill in the form below";
-const formSubTitle: string = "We'll get back to you in 1-2 business days.";
+  "Une question ? Un dossier à déposer ? Notre équipe est à votre écoute. Remplissez le formulaire ou contactez-nous directement.";
+const formTitle: string = "Envoyez-nous un message";
+const formSubTitle: string = "Nous vous répondrons dans les plus brefs délais.";
 ---
 
 <!-- Contact Us -->
@@ -44,26 +44,26 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <TextInput
                 id="hs-firstname-contacts"
-                label="First Name"
+                label="Nom complet"
                 name="hs-firstname-contacts"
               />
               <TextInput
                 id="hs-lastname-contacts"
-                label="Last Name"
-                name="hs-firstname-contacts"
+                label="Objet"
+                name="hs-lastname-contacts"
               />
             </div>
             <EmailContactInput id="hs-email-contacts" />
             <PhoneInput id="hs-phone-number" />
             <TextAreaInput
               id="hs-about-contacts"
-              label="Details"
+              label="Votre message"
               name="hs-about-contacts"
             />
           </div>
 
           <div class="mt-4 grid">
-            <AuthBtn title="Send Message" />
+            <AuthBtn title="Envoyer le message" />
           </div>
 
           <div class="mt-3 text-center">
@@ -77,40 +77,34 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
         <ContactIconBlock
-          heading="Knowledgebase"
-          content="Browse through all of our knowledgebase articles."
-          isLinkVisible={true}
-          linkTitle="Visit guides & tutorials"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="question" />
-        </ContactIconBlock>
-
-        <ContactIconBlock
-          heading="FAQ"
-          content="Explore our FAQ for quick, clear answers to common queries."
-          isLinkVisible={true}
-          linkTitle="Visit FAQ"
-          linkURL="#"
-          isArrowVisible={true}
+          heading="Téléphones"
+          content="M. Gaye : 77 656 70 59 | Renseignements : 77 632 21 52 | Secrétariat : 33 961 62 25 | Secrétaire : 77 650 95 91"
+          isLinkVisible={false}
           ><Icon name="chatBubble" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visit our office"
-          content="UK ScrewFast"
+          heading="Adresse"
+          content="ESUP SANTÉ"
           isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
+          addressContent="Av. des Grands Hommes, Angle Rue NDN 21, Ndioloffène, Sor, Saint-Louis, Sénégal — BP : 263"
           ><Icon name="mapPin" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Contact us by email"
-          content="Prefer the written word? Drop us an email at"
+          heading="Email"
+          content="Envoyez-nous un email à"
           isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
-          linkURL="#"
+          linkTitle="esupsante@netcourrier.com"
+          linkURL="mailto:esupsante@netcourrier.com"
           ><Icon name="envelopeOpen" />
+        </ContactIconBlock>
+
+        <ContactIconBlock
+          heading="Horaires"
+          content="Lundi – Vendredi : 08h00 – 17h00 | Samedi : 08h00 – 12h00 | Dimanche : Fermé"
+          isLinkVisible={false}
+          ><Icon name="question" />
         </ContactIconBlock>
       </div>
     </div>

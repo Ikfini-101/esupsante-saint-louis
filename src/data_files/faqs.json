@@ -1,29 +1,25 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Tout ce que vous devez savoir pour votre inscription et votre parcours à ESUP SANTÉ.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "Quels sont les documents nécessaires pour candidater ?",
+      "answer": "Le dossier de candidature doit comprendre : une demande manuscrite, une attestation ou photocopie légalisée du diplôme exigé, un certificat de visite médicale, un extrait de casier judiciaire, un extrait d'acte de naissance, 3 photos d'identité, un certificat de nationalité sénégalaise et une carte nationale d'identité."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "Quand ont lieu les inscriptions ?",
+      "answer": "Les inscriptions pour l'année académique 2025–2026 sont ouvertes. Les dossiers peuvent être déposés directement au secrétariat ou envoyés par courrier à l'adresse de l'école."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "Quelles sont les modalités de paiement ?",
+      "answer": "Les frais de scolarité se paient au plus tard le 05 de chaque mois. Toute somme versée n'est pas remboursable. La mensualité d'août est payée au moment de l'inscription. Les frais de certification (20 000 FCFA) sont à la charge de l'élève, payables au dépôt du dossier pédagogique en 3ème année."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "Y a-t-il des stages obligatoires ?",
+      "answer": "Oui, des stages en milieu hospitalier sont prévus dans toutes les filières. Les frais de stage s'élèvent à 20 000 FCFA par an et sont obligatoires pour la validation du diplôme."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
-    },
-    {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Quel est le niveau requis pour s'inscrire ?",
+      "answer": "Le Baccalauréat est requis pour les filières Licence Sciences Infirmières et Assistant Infirmier. Pour le Technicien Supérieur de Santé, un Diplôme d'État de Sage-Femme ou d'Infirmier est exigé (BAC ou BFEM avec expérience professionnelle de 4 ans)."
     }
   ]
 }
