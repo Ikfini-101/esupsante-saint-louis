@@ -7,6 +7,7 @@ export const SITE = {
   description_short: "École de formation professionnelle en santé à Saint-Louis, Sénégal.",
   url: "https://esupsante-saint-louis.pages.dev",
   author: "ESUP SANTÉ",
+  contactEmail: "keurdaour1261@gmail.com",
 };
 
 export const SEO = {
