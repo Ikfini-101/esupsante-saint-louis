@@ -16,9 +16,10 @@ interface Props {
   features?: Feature[];
   src?: any;
   alt?: string;
+  carouselImages?: { src: any; alt: string }[];
 }
 // Define props from Astro
-const { title, subTitle, src, alt, features } = Astro.props;
+const { title, subTitle, src, alt, features, carouselImages } = Astro.props;
 ---
 
 <section
@@ -27,15 +28,53 @@ const { title, subTitle, src, alt, features } = Astro.props;
   <!-- Block to display the feature image -->
   <div class="relative mb-6 overflow-hidden md:mb-8">
     {
-      src && alt && (
-        <Image
-          src={src}
-          alt={alt}
-          class="h-full w-full object-cover object-center"
-          draggable={"false"}
-          format={"avif"}
-          loading={"eager"}
-        />
+      carouselImages ? (
+        <div data-hs-carousel='{ "loadingClasses": "opacity-0", "isAutoPlay": true, "speed": 1500 }' class="relative">
+          <div class="hs-carousel relative min-h-[400px] w-full overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-900 md:min-h-[600px] lg:min-h-[750px]">
+            <div class="hs-carousel-body absolute bottom-0 start-0 top-0 flex flex-nowrap opacity-0 transition-transform duration-700">
+              {carouselImages.map((image) => (
+                <div class="hs-carousel-slide bg-neutral-100 dark:bg-neutral-900">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    class="h-full w-full object-cover object-top"
+                    draggable={"false"}
+                    format={"avif"}
+                    loading={"eager"}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          <button type="button" class="hs-carousel-prev hs-carousel-disabled:opacity-50 absolute inset-y-0 start-0 inline-flex w-[46px] items-center justify-center text-gray-800 hover:bg-gray-800/10 focus:bg-gray-800/10 focus:outline-hidden disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+            <span class="sr-only">Précédent</span>
+            <span class="text-2xl" aria-hidden="true">
+              <Icon name="arrowLeft" />
+            </span>
+          </button>
+          <button type="button" class="hs-carousel-next hs-carousel-disabled:opacity-50 absolute inset-y-0 end-0 inline-flex w-[46px] items-center justify-center text-gray-800 hover:bg-gray-800/10 focus:bg-gray-800/10 focus:outline-hidden disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+            <span class="sr-only">Suivant</span>
+            <span class="text-2xl" aria-hidden="true">
+              <Icon name="arrowRight" />
+            </span>
+          </button>
+          <div class="hs-carousel-pagination absolute bottom-3 end-0 start-0 flex justify-center space-x-2">
+            {carouselImages.map((_, i) => (
+              <span class="hs-carousel-active:bg-yellow-500 hs-carousel-active:border-yellow-500 size-3 cursor-pointer rounded-full border border-gray-400"></span>
+            ))}
+          </div>
+        </div>
+      ) : (
+        src && alt && (
+          <Image
+            src={src}
+            alt={alt}
+            class="h-full w-full object-cover object-center"
+            draggable={"false"}
+            format={"avif"}
+            loading={"eager"}
+          />
+        )
       )
     }
   </div>
