@@ -133,10 +133,10 @@ const appleTouchIcon = await getImage({
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 {/* Links for favicons */}
-<link href="/favicon.ico" rel="icon" sizes="any" type="image/x-icon" />
-<link href={faviconSvg.src} rel="icon" type="image/svg+xml" sizes="any" />
+<link href="/favicon.ico?v=2" rel="icon" sizes="any" type="image/x-icon" />
+<link href={`${faviconSvg.src}?v=2`} rel="icon" type="image/svg+xml" sizes="any" />
 <meta name="mobile-web-app-capable" content="yes" />
-<link href={appleTouchIcon.src} rel="apple-touch-icon" />
-<link href={appleTouchIcon.src} rel="shortcut icon" />
+<link href={`${appleTouchIcon.src}?v=2`} rel="apple-touch-icon" />
+<link href={`${appleTouchIcon.src}?v=2`} rel="shortcut icon" />
 {/* Set theme color */}
 <meta name="theme-color" content="#1e8449" />
