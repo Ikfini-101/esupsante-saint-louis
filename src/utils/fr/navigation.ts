@@ -1,28 +1,26 @@
 
 const navBarLinks = [
   { name: "Accueil", url: "/fr" },
-  { name: "Produits", url: "/fr/products" },
-  { name: "Services", url: "/fr/services" },
-  { name: "Blog", url: "/fr/blog" },
+  { name: "Formations", url: "/fr/formations" },
+  { name: "Galerie", url: "/fr/galerie" },
   { name: "Contact", url: "/fr/contact" },
 ];
 
 const footerLinks = [
   {
-    section: "Écosystème",
+    section: "Éducation",
     links: [
-      { name: "Documentation", url: "/fr/welcome-to-docs/" },
-      { name: "Outils et Équipements", url: "/fr/products" },
-      { name: "Services de Construction", url: "/fr/services" },
+      { name: "Nos Formations", url: "/fr/formations" },
+      { name: "Admissions", url: "/fr/contact" },
+      { name: "Galerie", url: "/fr/galerie" },
     ],
   },
   {
-    section: "Société",
+    section: "L'École",
     links: [
-      { name: "À propos de nous", url: "#" },
-      { name: "Blog", url: "/fr/blog" },
-      { name: "Carrières", url: "#" },
-      { name: "Clients", url: "#" },
+      { name: "À propos", url: "#" },
+      { name: "Contact", url: "/fr/contact" },
+      { name: "Facebook", url: "https://www.facebook.com/ESUPSANTE/" },
     ],
   },
 ];

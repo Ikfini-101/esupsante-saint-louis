@@ -9,25 +9,25 @@ const navBarLinks = [
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Formations",
+    section: "Education",
     links: [
-      { name: "Licence Sciences Infirmières", url: "/formations" },
-      { name: "Licence Sciences Obstétricales", url: "/formations" },
-      { name: "Assistant(e) Infirmier(ère)", url: "/formations" },
+      { name: "Our Programs", url: "/formations" },
+      { name: "Admissions", url: "/contact" },
+      { name: "Gallery", url: "/galerie" },
     ],
   },
   {
-    section: "L'école",
+    section: "The School",
     links: [
-      { name: "Accueil", url: "/" },
-      { name: "Galerie", url: "/galerie" },
+      { name: "About", url: "#" },
       { name: "Contact", url: "/contact" },
+      { name: "Facebook", url: "https://www.facebook.com/ESUPSANTE/" },
     ],
   },
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
+  facebook: "https://www.facebook.com/ESUPSANTE/",
 };
 
 export default {

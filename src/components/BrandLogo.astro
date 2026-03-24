@@ -1,9 +1,14 @@
-<svg
-  {...Astro.props}
-  viewBox="0 0 260 260"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
+---
+const { class: className, ...rest } = Astro.props;
+---
+<div class:list={["flex items-center gap-2", className]} {...rest}>
+  <!-- Logo SVG ESUP Santé -->
+  <svg
+    viewBox="0 0 260 260"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-10 w-10 shrink-0"
+  >
   <defs>
     <style>
       .red   { fill: #c0392b; }
@@ -104,4 +109,11 @@
   <!-- BOTTOM TEXT -->
   <text x="130" y="242" font-family="Arial, sans-serif" font-size="7.5" font-weight="700"
         fill="#1e8449" text-anchor="middle" letter-spacing="1.5">PROFESSIONNELLE EN SANTÉ</text>
-</svg>
+  </svg>
+
+  <!-- Nom de l'école en texte -->
+  <span class="flex flex-col leading-none">
+    <span class="text-base font-black tracking-tight" style="color:#1e8449;">ESUP</span>
+    <span class="text-base font-black tracking-tight" style="color:#c0392b;">SANTÉ</span>
+  </span>
+</div>

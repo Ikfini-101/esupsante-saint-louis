@@ -1,0 +1,146 @@
+---
+// Import necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import MainSection from "@components/ui/blocks/MainSection.astro";
+import LeftSection from "@components/ui/blocks/LeftSection.astro";
+import RightSection from "@components/ui/blocks/RightSection.astro";
+import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
+
+// Import necessary images
+import etudiantStethoscope from "@images/etudiant-stethoscope.jpg";
+import etudiantsStage from "@images/etudiants-stage.jpg";
+import etudiantesClasse from "@images/etudiantes-classe.jpg";
+import facadeCampus from "@images/facade-campus.jpg";
+
+interface Program {
+  isRightSection: boolean;
+  title: string;
+  subTitle: string;
+  btnExists?: boolean;
+  btnTitle?: string;
+  btnURL?: string;
+  single?: boolean;
+  img?: any;
+  imgAlt?: string;
+  imgOne?: any;
+  imgOneAlt?: string;
+  imgTwo?: any;
+  imgTwoAlt?: string;
+}
+
+const programs: Program[] = [
+  {
+    isRightSection: true,
+    title: "Sciences Infirmières et Obstétricales",
+    subTitle:
+      "Nos programmes de Licence en Sciences Infirmières et Sciences Obstétricales (Sages-Femmes) sont conçus pour former des professionnels hautement qualifiés. Alliant théorie rigoureuse et pratique clinique intensive, ces cursus préparent nos étudiants à relever les défis de la santé moderne au Sénégal et à l'international.",
+    single: false,
+    imgOne: etudiantStethoscope,
+    imgOneAlt: "Étudiant en sciences infirmières pratiquant avec un stéthoscope.",
+    imgTwo: etudiantsStage,
+    imgTwoAlt: "Étudiants en milieu hospitalier pendant un stage clinique.",
+  },
+  {
+    isRightSection: false,
+    title: "Assistant(e) Infirmier(ère) Diplômé(e) d'État",
+    subTitle:
+      "La formation des Assistants Infirmiers Diplômés d'État est un pilier de notre établissement. Nous formons des agents de santé polyvalents, capables d'assurer des soins de qualité et d'accompagner les patients avec humanisme et professionnalisme dans toutes les structures sanitaires.",
+    img: etudiantesClasse,
+    imgAlt: "Session de formation pratique en salle de classe chirurgicale.",
+    btnExists: true,
+    btnTitle: "Détails de la formation",
+    btnURL: "/fr/contact",
+  },
+  {
+    isRightSection: true,
+    title: "Infirmier(ère) / Sage-Femme d'État",
+    subTitle:
+      "ESUP SANTÉ prépare les futurs cadres de la santé publique. Nos diplômés d'État sont reconnus pour leur expertise technique et leur sens des responsabilités. Le cursus inclut des stages pratiques dans les plus grands centres hospitaliers de la région de Saint-Louis.",
+    single: true,
+    img: facadeCampus,
+    imgAlt: "Campus principal d'ESUP SANTÉ à Saint-Louis.",
+  },
+];
+---
+
+<MainLayout
+  title="Nos Formations | ESUP SANTÉ"
+  lang="fr"
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://esupsante.com/fr/formations",
+    url: "https://esupsante.com/fr/formations",
+    name: "Programmes de Formation en Santé | ESUP SANTÉ",
+    description:
+      "Découvrez nos filières d'excellence en santé à Saint-Louis : Sciences Infirmières, Obstétrique, Assistants Infirmiers et Délégués Médicaux.",
+    isPartOf: {
+      "@type": "WebSite",
+      url: "https://esupsante.com/fr",
+      name: "ESUP SANTÉ",
+      description:
+        "École Supérieure de Formation Professionnelle en Santé à Saint-Louis, Sénégal.",
+    },
+    inLanguage: "fr",
+  }}
+>
+  <MainSection
+    title="L'Excellence au service de la Santé"
+    subTitle="Depuis plus de 15 ans, ESUP SANTÉ s'engage à fournir une éducation de qualité supérieure. Nos programmes sont accrédités et conçus pour répondre aux besoins réels du marché de l'emploi dans le secteur médical."
+    btnExists={true}
+    btnTitle="S'inscrire pour 2025-2026"
+    btnURL="/fr/contact"
+  />
+
+  {
+    programs.map((program) => {
+      return program.isRightSection ? (
+        <RightSection
+          title={program.title}
+          subTitle={program.subTitle}
+          single={program.single}
+          imgOne={program.imgOne}
+          imgOneAlt={program.imgOneAlt}
+          imgTwo={program.imgTwo}
+          imgTwoAlt={program.imgTwoAlt}
+          btnExists={program.btnExists}
+          btnTitle={program.btnTitle}
+          btnURL={program.btnURL}
+          img={program.img}
+          imgAlt={program.imgAlt}
+        />
+      ) : (
+        <LeftSection
+          title={program.title}
+          subTitle={program.subTitle}
+          img={program.img}
+          imgAlt={program.imgAlt}
+          btnExists={program.btnExists}
+          btnTitle={program.btnTitle}
+          btnURL={program.btnURL}
+        />
+      );
+    })
+  }
+
+  <FeaturesStats
+    title="ESUP SANTÉ en chiffres"
+    subTitle="Une institution solide bâtie sur la confiance et l'excellence académique à Saint-Louis."
+    mainStatTitle="15 ans"
+    mainStatSubTitle="d'expérience dans la formation paramédicale"
+    stats={[
+      {
+        stat: "100%",
+        description: "de réussite aux examens d'État",
+      },
+      {
+        stat: "3",
+        description: "filières majeures accréditées",
+      },
+      {
+        stat: "800+",
+        description: "étudiants formés et insérés",
+      },
+    ]}
+  />
+</MainLayout>

@@ -33,7 +33,7 @@ const { product } = Astro.props;
 
 const pageTitle: string = `${product.data.title} | ${SITE.title}`;
 const metaDescription = product.data.description;
-const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
+const ogTitle = `${product.data.title} | Hardware Tools | ESUP SANTÉ`;
 ---
 
 <MainLayout
@@ -43,12 +43,12 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
   structuredData={{
     "@context": "https://schema.org",
     "@type": "Product",
-    "@id": `https://screwfast.uk/products/${product.data.title.toLowerCase().replace(/\s+/g, "-")}`,
+    "@id": `https://esupsante.com/products/${product.data.title.toLowerCase().replace(/\s+/g, "-")}`,
     name: product.data.title,
     description: product.data.description,
     brand: {
       "@type": "Brand",
-      name: "ScrewFast",
+      name: "ESUP SANTÉ",
     },
   }}
 >
@@ -349,7 +349,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
         changeHeadingStyle(
           btn,
           ["text-neutral-800", "dark:text-neutral-200"],
-          ["text-orange-400", "dark:text-orange-300"]
+          ["text-green-600", "dark:text-green-400"]
         );
       }
     }
@@ -372,7 +372,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
 
       changeHeadingStyle(
         button,
-        ["text-orange-400", "dark:text-orange-300"],
+        ["text-green-600", "dark:text-green-400"],
         ["text-neutral-800", "dark:text-neutral-200"]
       );
     }
@@ -394,7 +394,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
     if (tabButtons.length > 0) {
       changeHeadingStyle(
         tabButtons[0],
-        ["text-orange-400", "dark:text-orange-300"],
+        ["text-green-600", "dark:text-green-400"],
         []
       );
     }

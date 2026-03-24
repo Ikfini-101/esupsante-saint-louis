@@ -5,7 +5,7 @@ export const SITE = {
   tagline: "École Supérieure de Formation Professionnelle en Santé",
   description: "ESUP SANTÉ forme les professionnels de santé de demain. Licences en Sciences Infirmières et Obstétricales, Assistants Infirmiers Diplômés d'État — à Saint-Louis, Sénégal.",
   description_short: "École de formation professionnelle en santé à Saint-Louis, Sénégal.",
-  url: "https://esupsante-saint-louis.pages.dev",
+  url: "https://esupsante.com",
   author: "ESUP SANTÉ",
   contactEmail: "keurdaour1261@gmail.com",
 };

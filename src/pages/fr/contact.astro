@@ -6,8 +6,8 @@ import { SITE } from "@data/constants";
 
 const pageTitle: string = `Nous Contacter | ${SITE.title}`;
 const metaDescription =
-  "Vous avez des questions ou souhaitez discuter d'un projet ? Contactez-nous et élaborons ensemble la solution parfaite avec nos outils et services.";
-const ogTitle = "Nous Contacter | ScrewFast";
+  "Une question ? Un projet de formation ? Contactez ESUP SANTÉ à Saint-Louis pour en savoir plus sur nos filières et modalités d'inscription.";
+const ogTitle = `Nous Contacter | ${SITE.title}`;
 ---
 
 <MainLayout
@@ -18,17 +18,17 @@ const ogTitle = "Nous Contacter | ScrewFast";
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/fr/contact",
-    url: "https://screwfast.uk/fr/contact",
-    name: "Nous Contacter | ScrewFast",
+    "@id": "https://esupsante.com/fr/contact",
+    url: "https://esupsante.com/fr/contact",
+    name: `Nous Contacter | ${SITE.title}`,
     description:
-      "Vous avez des questions ou souhaitez discuter d'un projet ? Contactez-nous et élaborons ensemble la solution parfaite avec nos outils et services.",
+      "Contactez ESUP SANTÉ à Saint-Louis pour toute information sur nos formations professionnelles en santé.",
     isPartOf: {
       "@type": "WebSite",
-      url: "https://screwfast.uk/fr/",
-      name: "ScrewFast",
+      url: "https://esupsante.com/fr/",
+      name: SITE.title,
       description:
-        "ScrewFast propose des outils matériels de premier ordre et des services de construction experts pour répondre à tous vos besoins de projet.",
+        SITE.description,
     },
     inLanguage: "fr",
   }}
