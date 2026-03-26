@@ -9,17 +9,17 @@ const navBarLinks = [
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Education",
+    section: "Enseignement",
     links: [
-      { name: "Our Programs", url: "/formations" },
+      { name: "Nos Formations", url: "/formations" },
       { name: "Admissions", url: "/contact" },
-      { name: "Gallery", url: "/galerie" },
+      { name: "Galerie", url: "/galerie" },
     ],
   },
   {
-    section: "The School",
+    section: "L'École",
     links: [
-      { name: "About", url: "#" },
+      { name: "À Propos", url: "#" },
       { name: "Contact", url: "/contact" },
       { name: "Facebook", url: "https://www.facebook.com/ESUPSANTE/" },
     ],

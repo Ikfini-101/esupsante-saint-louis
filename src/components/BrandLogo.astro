@@ -1,119 +1,14 @@
 ---
+import { Image } from "astro:assets";
+import logoESUP from "@images/logo_esup_sante.png";
 const { class: className, ...rest } = Astro.props;
 ---
 <div class:list={["flex items-center gap-2", className]} {...rest}>
-  <!-- Logo SVG ESUP Santé -->
-  <svg
-    viewBox="0 0 260 260"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    class="h-10 w-10 shrink-0"
-  >
-  <defs>
-    <style>
-      .red   { fill: #c0392b; }
-      .green { fill: #1e8449; }
-      .dkgreen { fill: #155d32; }
-      .white { fill: #ffffff; }
-      .text-red { fill: #c0392b; font-family: 'Georgia', serif; }
-      .text-green { fill: #1e8449; font-family: 'Georgia', serif; }
-      .text-dark { fill: #0b3d20; font-family: 'Georgia', serif; }
-    </style>
-  </defs>
-
-  <!-- TOP RED ARC BANNER -->
-  <path d="M 50,115 Q 130,30 210,115" fill="none" stroke="#c0392b" stroke-width="18" stroke-linecap="round"/>
-  <path id="arcTop" d="M 52,114 Q 130,32 208,114" fill="none"/>
-  <text font-size="9" font-family="Arial, sans-serif" fill="white" font-weight="700" letter-spacing="1">
-    <textPath href="#arcTop" startOffset="8%">ÉCOLE SUPÉRIEURE · DE FORMATION</textPath>
-  </text>
-
-  <!-- OUTER CIRCLE -->
-  <circle cx="130" cy="135" r="85" fill="white" stroke="#1e8449" stroke-width="2.5" opacity="0.15"/>
-
-  <!-- LAUREL BRANCHES - LEFT -->
-  <g transform="translate(57, 90) rotate(-30)">
-    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(48, 108) rotate(-45)">
-    <ellipse cx="0" cy="0" rx="13" ry="6" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(44, 127) rotate(-55)">
-    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(47, 146) rotate(-65)">
-    <ellipse cx="0" cy="0" rx="12" ry="5.5" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(55, 163) rotate(-75)">
-    <ellipse cx="0" cy="0" rx="11" ry="5" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(66, 178) rotate(-85)">
-    <ellipse cx="0" cy="0" rx="10" ry="5" fill="#1e8449" opacity="0.85"/>
-  </g>
-  <path d="M 65,80 Q 49,130 75,185" fill="none" stroke="#155d32" stroke-width="2.5" stroke-linecap="round"/>
-
-  <!-- LAUREL BRANCHES - RIGHT -->
-  <g transform="translate(203, 90) rotate(30)">
-    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(212, 108) rotate(45)">
-    <ellipse cx="0" cy="0" rx="13" ry="6" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(216, 127) rotate(55)">
-    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(213, 146) rotate(65)">
-    <ellipse cx="0" cy="0" rx="12" ry="5.5" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(205, 163) rotate(75)">
-    <ellipse cx="0" cy="0" rx="11" ry="5" fill="#1e8449" opacity="0.9"/>
-  </g>
-  <g transform="translate(194, 178) rotate(85)">
-    <ellipse cx="0" cy="0" rx="10" ry="5" fill="#1e8449" opacity="0.85"/>
-  </g>
-  <path d="M 195,80 Q 211,130 185,185" fill="none" stroke="#155d32" stroke-width="2.5" stroke-linecap="round"/>
-
-  <!-- CADUCEE -->
-  <rect x="127" y="78" width="6" height="95" rx="3" fill="#1e8449"/>
-  <path d="M 130,80 Q 105,68 100,80 Q 107,88 130,84" fill="#1e8449"/>
-  <path d="M 130,80 Q 155,68 160,80 Q 153,88 130,84" fill="#1e8449"/>
-  <path d="M 130,95 Q 112,103 113,113 Q 114,123 130,127 Q 146,131 147,141 Q 148,151 130,158 Q 115,163 113,170"
-        fill="none" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
-  <path d="M 130,95 Q 148,103 147,113 Q 146,123 130,127 Q 114,131 113,141 Q 112,151 130,158 Q 145,163 147,170"
-        fill="none" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
-  <ellipse cx="113" cy="172" rx="7" ry="5" fill="#c0392b" transform="rotate(-10,113,172)"/>
-  <ellipse cx="147" cy="172" rx="7" ry="5" fill="#c0392b" transform="rotate(10,147,172)"/>
-  <ellipse cx="130" cy="127" rx="8" ry="6" fill="#1e8449"/>
-
-  <!-- ESUP | SANTÉ text -->
-  <text x="100" y="140" font-family="'Georgia', serif" font-size="15" font-weight="900"
-        fill="#1e8449" text-anchor="middle" letter-spacing="1">ESUP</text>
-  <text x="162" y="140" font-family="'Georgia', serif" font-size="15" font-weight="900"
-        fill="#c0392b" text-anchor="middle" letter-spacing="1">SANTÉ</text>
-
-  <!-- OPEN BOOK -->
-  <rect x="127" y="178" width="6" height="32" rx="2" fill="#155d32"/>
-  <path d="M 130,180 Q 95,182 82,192 Q 80,200 82,210 Q 95,215 130,210 Z"
-        fill="#27ae60" stroke="#155d32" stroke-width="1.5"/>
-  <path d="M 130,180 Q 165,182 178,192 Q 180,200 178,210 Q 165,215 130,210 Z"
-        fill="#27ae60" stroke="#155d32" stroke-width="1.5"/>
-  <line x1="96" y1="193" x2="124" y2="191" stroke="#155d32" stroke-width="1" opacity="0.5"/>
-  <line x1="96" y1="199" x2="124" y2="197" stroke="#155d32" stroke-width="1" opacity="0.5"/>
-  <line x1="96" y1="205" x2="124" y2="204" stroke="#155d32" stroke-width="1" opacity="0.5"/>
-  <line x1="164" y1="193" x2="136" y2="191" stroke="#155d32" stroke-width="1" opacity="0.5"/>
-  <line x1="164" y1="199" x2="136" y2="197" stroke="#155d32" stroke-width="1" opacity="0.5"/>
-  <line x1="164" y1="205" x2="136" y2="204" stroke="#155d32" stroke-width="1" opacity="0.5"/>
-  <path d="M 80,207 Q 95,218 130,215 Q 165,218 180,207 L 178,212 Q 165,224 130,221 Q 95,224 82,212 Z"
-        fill="#155d32"/>
-
-  <!-- BOTTOM TEXT -->
-  <text x="130" y="242" font-family="Arial, sans-serif" font-size="7.5" font-weight="700"
-        fill="#1e8449" text-anchor="middle" letter-spacing="1.5">PROFESSIONNELLE EN SANTÉ</text>
-  </svg>
-
-  <!-- Nom de l'école en texte -->
-  <span class="flex flex-col leading-none">
-    <span class="text-base font-black tracking-tight" style="color:#1e8449;">ESUP</span>
-    <span class="text-base font-black tracking-tight" style="color:#c0392b;">SANTÉ</span>
-  </span>
+  <Image
+    src={logoESUP}
+    alt="Logo ESUP SANTÉ"
+    class="h-12 w-auto shrink-0"
+    draggable={"false"}
+    loading={"eager"}
+  />
 </div>

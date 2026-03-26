@@ -11,6 +11,7 @@ import etudiantStethoscope from "@images/etudiant-stethoscope.jpg";
 import etudiantsStage from "@images/etudiants-stage.jpg";
 import etudiantesClasse from "@images/etudiantes-classe.jpg";
 import facadeCampus from "@images/facade-campus.jpg";
+import groupeFacade from "@images/groupe-facade.jpg";
 
 interface Program {
   isRightSection: boolean;
@@ -31,9 +32,9 @@ interface Program {
 const programs: Program[] = [
   {
     isRightSection: true,
-    title: "Sciences Infirmières et Obstétricales",
+    title: "Licence Sage-femme d'État",
     subTitle:
-      "Nos programmes de Licence en Sciences Infirmières et Sciences Obstétricales (Sages-Femmes) sont conçus pour former des professionnels hautement qualifiés. Alliant théorie rigoureuse et pratique clinique intensive, ces cursus préparent nos étudiants à relever les défis de la santé moderne au Sénégal et à l'international.",
+      "La Licence Sage-femme d'État forme des professionnels capables d'accompagner les femmes tout au long de la grossesse, lors de l'accouchement et en suites de couches. Reconnue par l'ANAQ-SUP, cette formation d'excellence garantit une pratique sécurisée.\n\n📋 Niveau requis : BAC | Durée : 3 ans\n💰 Inscription : 100 000 FCFA | Mensualité : 50 000 FCFA\n🩺 Frais de stage : 20 000 FCFA | Kit de stage : 20 000 FCFA",
     single: false,
     imgOne: etudiantStethoscope,
     imgOneAlt: "Étudiant en sciences infirmières pratiquant avec un stéthoscope.",
@@ -42,23 +43,36 @@ const programs: Program[] = [
   },
   {
     isRightSection: false,
-    title: "Assistant(e) Infirmier(ère) Diplômé(e) d'État",
+    title: "Licence Infirmier d'État",
     subTitle:
-      "La formation des Assistants Infirmiers Diplômés d'État est un pilier de notre établissement. Nous formons des agents de santé polyvalents, capables d'assurer des soins de qualité et d'accompagner les patients avec humanisme et professionnalisme dans toutes les structures sanitaires.",
+      "La Licence Infirmier d'État prépare de véritables piliers du système de santé, capables d'assurer les soins préventifs, curatifs et palliatifs. Ce parcours est accrédité par l'ANAQ-SUP.\n\n📋 Niveau requis : BAC | Durée : 3 ans\n💰 Inscription : 100 000 FCFA | Mensualité : 50 000 FCFA\n🩺 Frais de stage : 20 000 FCFA | Kit de stage : 20 000 FCFA",
     img: etudiantesClasse,
-    imgAlt: "Session de formation pratique en salle de classe chirurgicale.",
+    imgAlt: "Session de formation pratique en salle de classe.",
     btnExists: true,
-    btnTitle: "Détails de la formation",
+    btnTitle: "Déposer mon dossier",
     btnURL: "/fr/contact",
   },
   {
     isRightSection: true,
-    title: "Infirmier(ère) / Sage-Femme d'État",
+    title: "Assistant infirmier d'État",
     subTitle:
-      "ESUP SANTÉ prépare les futurs cadres de la santé publique. Nos diplômés d'État sont reconnus pour leur expertise technique et leur sens des responsabilités. Le cursus inclut des stages pratiques dans les plus grands centres hospitaliers de la région de Saint-Louis.",
-    single: true,
-    img: facadeCampus,
-    imgAlt: "Campus principal d'ESUP SANTÉ à Saint-Louis.",
+      "Ce programme forme des assistants infirmiers compétents, aptes à seconder efficacement les équipes médicales dans les actes de soins au quotidien.\n\n📋 Niveau requis : BFEM | Durée : 2 ans\n💰 Inscription : 80 000 FCFA | Mensualité : 40 000 FCFA\n🩺 Frais de stage : 20 000 FCFA | Kit de stage : 20 000 FCFA",
+    single: false,
+    imgOne: facadeCampus,
+    imgOneAlt: "Campus principal d'ESUP SANTÉ.",
+    imgTwo: etudiantesClasse,
+    imgTwoAlt: "Étudiantes en formation.",
+  },
+  {
+    isRightSection: false,
+    title: "Conditions Générales d'Admission",
+    subTitle:
+      "Le dossier de candidature doit comprendre :\n\n✓ Demande manuscrite adressée au Directeur\n✓ Photocopie du ou des diplômes légalisés\n✓ Photocopie légalisée du certificat de nationalité\n✓ 3 photos d'identité\n✓ Extrait de Naissance\n✓ Certificat de visite et contre-visite\n✓ Photocopie légalisée de la carte nationale d’identité\n✓ Fiche de renseignement à remplir",
+    img: groupeFacade,
+    imgAlt: "Groupe d'étudiants devant le campus ESUP SANTÉ",
+    btnExists: true,
+    btnTitle: "Nous contacter",
+    btnURL: "/fr/contact",
   },
 ];
 ---
@@ -73,7 +87,7 @@ const programs: Program[] = [
     url: "https://esupsante.com/fr/formations",
     name: "Programmes de Formation en Santé | ESUP SANTÉ",
     description:
-      "Découvrez nos filières d'excellence en santé à Saint-Louis : Sciences Infirmières, Obstétrique, Assistants Infirmiers et Délégués Médicaux.",
+      "Découvrez nos filières d'excellence en santé à Saint-Louis : Licence Sage-femme d'État, Licence Infirmier d'État et Assistant infirmier d'État.",
     isPartOf: {
       "@type": "WebSite",
       url: "https://esupsante.com/fr",
@@ -126,20 +140,20 @@ const programs: Program[] = [
   <FeaturesStats
     title="ESUP SANTÉ en chiffres"
     subTitle="Une institution solide bâtie sur la confiance et l'excellence académique à Saint-Louis."
-    mainStatTitle="15 ans"
-    mainStatSubTitle="d'expérience dans la formation paramédicale"
+    mainStatTitle="2"
+    mainStatSubTitle="filières professionnelles accréditées par l'ANAQ-SUP"
     stats={[
       {
-        stat: "100%",
-        description: "de réussite aux examens d'État",
+        stat: "15+",
+        description: "années d'expérience en formation santé",
       },
       {
-        stat: "3",
-        description: "filières majeures accréditées",
+        stat: "BAC / BFEM",
+        description: "niveau minimum requis pour les filières",
       },
       {
-        stat: "800+",
-        description: "étudiants formés et insérés",
+        stat: "40.000",
+        description: "FCFA de frais liés au stage (frais + kit)",
       },
     ]}
   />

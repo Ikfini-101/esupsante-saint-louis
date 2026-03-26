@@ -1,39 +1,63 @@
 {
-  "title": "Investissez dans votre avenir",
-  "subTitle": "Des formations accessibles pour construire une carrière solide dans le secteur de la santé au Sénégal.",
-  "badge": "Inscriptions ouvertes",
-  "thirdOption": "Technicien Supérieur de Santé ? Contactez-nous pour plus d'informations.",
+  "title": "Filières et Tarifs",
+  "subTitle": "Des formations d'excellence pour construire une carrière solide dans le secteur de la santé au Sénégal.",
+  "badge": "Accrédité ANAQ-SUP",
+  "thirdOption": "Une question sur l'une de nos trois filières ? N'hésitez pas à nous contacter.",
   "btnText": "Nous contacter",
-  "starterKit": {
-    "name": "Assistant(e) Infirmier(ère)",
-    "description": "Formation d'Assistant Infirmier — BAC — 2 ans",
-    "price": "500K",
-    "cents": "FCFA",
-    "billingFrequency": "/an",
-    "features": [
-      "Niveau requis : BAC",
-      "Durée : 2 ans",
-      "Inscription : 80 000 FCFA",
-      "Mensualité : 40 000 FCFA/mois",
-      "Frais de stage : 20 000 FCFA/an"
-    ],
-    "purchaseBtnTitle": "Candidater",
-    "purchaseLink": "/contact"
-  },
-  "professionalToolbox": {
-    "name": "Licence Sciences Infirmières",
-    "description": "Licence en Sciences Infirmières & Obstétricales — BAC — 3 ans",
-    "price": "670K",
-    "cents": "FCFA",
-    "billingFrequency": "/an",
-    "features": [
-      "Niveau requis : BAC",
-      "Durée : 3 ans",
-      "Inscription : 100 000 FCFA",
-      "Mensualité : 50 000 FCFA/mois",
-      "Frais de stage : 20 000 FCFA/an"
-    ],
-    "purchaseBtnTitle": "Candidater",
-    "purchaseLink": "/contact"
-  }
+  "products": [
+    {
+      "name": "Licence Sage-femme d’État",
+      "description": "Diplôme d'État — BAC — 3 ans",
+      "price": "50.000",
+      "cents": "FCFA",
+      "billingFrequency": "/mois",
+      "isAccredited": true,
+      "features": [
+        "Niveau requis : BAC",
+        "Durée : 3 ans",
+        "Inscription / Réinscription : 100 000 FCFA",
+        "Mensualité : 50 000 FCFA/mois",
+        "Frais de stage : 20 000 FCFA",
+        "Kit de stage : 20 000 FCFA"
+      ],
+      "purchaseBtnTitle": "Candidater",
+      "purchaseLink": "/contact"
+    },
+    {
+      "name": "Licence Infirmier d’État",
+      "description": "Diplôme d'État — BAC — 3 ans",
+      "price": "50.000",
+      "cents": "FCFA",
+      "billingFrequency": "/mois",
+      "isAccredited": true,
+      "features": [
+        "Niveau requis : BAC",
+        "Durée : 3 ans",
+        "Inscription / Réinscription : 100 000 FCFA",
+        "Mensualité : 50 000 FCFA/mois",
+        "Frais de stage : 20 000 FCFA",
+        "Kit de stage : 20 000 FCFA"
+      ],
+      "purchaseBtnTitle": "Candidater",
+      "purchaseLink": "/contact"
+    },
+    {
+      "name": "Assistant infirmier d’État",
+      "description": "Diplôme d'État — BFEM — 2 ans",
+      "price": "40.000",
+      "cents": "FCFA",
+      "billingFrequency": "/mois",
+      "isAccredited": false,
+      "features": [
+        "Niveau requis : BFEM",
+        "Durée : 2 ans",
+        "Inscription / Réinscription : 80 000 FCFA",
+        "Mensualité : 40 000 FCFA/mois",
+        "Frais de stage : 20 000 FCFA",
+        "Kit de stage : 20 000 FCFA"
+      ],
+      "purchaseBtnTitle": "Candidater",
+      "purchaseLink": "/contact"
+    }
+  ]
 }

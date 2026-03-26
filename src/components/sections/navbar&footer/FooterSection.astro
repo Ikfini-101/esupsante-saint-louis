@@ -12,10 +12,9 @@ import { SITE } from "@data/constants";
 const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
 
 // Define the variables that will be used in this component
-const sectionThreeTitle: string = Astro.currentLocale === "fr" ? "Restez informé" : "Stay informed";
-const sectionThreeContent: string = Astro.currentLocale === "fr" ? "Recevez les dernières actualités et dates d'inscriptions." :
-  "Receive the latest news and enrollment dates.";
-const crafted: string = Astro.currentLocale === "fr" ? "Conçu par" : "Crafted by";
+const sectionThreeTitle: string = "Restez informé";
+const sectionThreeContent: string = "Recevez les dernières actualités et dates d'inscriptions.";
+const crafted: string = "Conçu par";
 ---
 
 <footer class="w-full bg-neutral-300 dark:bg-neutral-900">

@@ -34,9 +34,9 @@ interface Article {
 const articles: Article[] = [
   {
     isRightSection: true,
-    title: "Licence en Sciences Infirmières & Obstétricales",
+    title: "Licence Sage-femme d'État",
     subTitle:
-      "La Licence en Sciences Infirmières et Obstétricales prépare les étudiants à devenir des professionnels polyvalents et qualifiés. Le programme couvre les soins infirmiers généraux, la santé maternelle et infantile, la pharmacologie, l'anatomie, et les techniques de soins spécialisés. Les diplômés sont aptes à exercer dans les hôpitaux, cliniques et centres de santé.\n\n📋 Niveau requis : BAC | Durée : 3 ans\n💰 Inscription : 100 000 FCFA | Mensualité : 50 000 FCFA | Stage : 20 000 FCFA",
+      "La Licence Sage-femme d'État forme des professionnels capables d'accompagner les femmes tout au long de la grossesse, lors de l'accouchement et en suites de couches. Reconnue par l'ANAQ-SUP, cette formation d'excellence garantit une pratique sécurisée.\n\n📋 Niveau requis : BAC | Durée : 3 ans\n💰 Inscription : 100 000 FCFA | Mensualité : 50 000 FCFA\n🩺 Frais de stage : 20 000 FCFA | Kit de stage : 20 000 FCFA",
     single: false,
     imgOne: etudiantStethoscope,
     imgOneAlt: "Étudiant en blouse blanche avec stéthoscope",
@@ -45,9 +45,9 @@ const articles: Article[] = [
   },
   {
     isRightSection: false,
-    title: "Assistant(e) Infirmier(ère)",
+    title: "Licence Infirmier d'État",
     subTitle:
-      "Ce programme forme des assistants infirmiers capables d'assister les équipes soignantes dans les actes de soins courants. La formation allie théorie et pratique clinique pour garantir une insertion professionnelle rapide dans les structures de santé publiques et privées.\n\n📋 Niveau requis : BAC | Durée : 2 ans\n💰 Inscription : 80 000 FCFA | Mensualité : 40 000 FCFA | Stage : 20 000 FCFA",
+      "La Licence Infirmier d'État prépare de véritables piliers du système de santé, capables d'assurer les soins préventifs, curatifs et palliatifs. Ce parcours est accrédité par l'ANAQ-SUP.\n\n📋 Niveau requis : BAC | Durée : 3 ans\n💰 Inscription : 100 000 FCFA | Mensualité : 50 000 FCFA\n🩺 Frais de stage : 20 000 FCFA | Kit de stage : 20 000 FCFA",
     img: groupeBlousesRoses,
     imgAlt: "Étudiantes ESUP SANTÉ en blouses roses sur le campus",
     btnExists: true,
@@ -56,9 +56,9 @@ const articles: Article[] = [
   },
   {
     isRightSection: true,
-    title: "Technicien Supérieur de Santé",
+    title: "Assistant infirmier d'État",
     subTitle:
-      "Cette formation s'adresse aux titulaires d'un Diplôme d'État de Sage-Femme ou d'Infirmier. Les professionnels justifiant de 4 ans d'expérience ou titulaires d'un diplôme admis en équivalence peuvent également postuler. Le programme vise à approfondir les compétences techniques et cliniques pour accéder à des postes de responsabilité dans les structures de santé.\n\n📋 Niveau requis : BAC / BFEM + expérience",
+      "Ce programme forme des assistants infirmiers compétents, aptes à seconder efficacement les équipes médicales dans les actes de soins au quotidien.\n\n📋 Niveau requis : BFEM | Durée : 2 ans\n💰 Inscription : 80 000 FCFA | Mensualité : 40 000 FCFA\n🩺 Frais de stage : 20 000 FCFA | Kit de stage : 20 000 FCFA",
     single: false,
     imgOne: etudiantesClasse,
     imgOneAlt: "Étudiantes en salle de classe — cours de chirurgie",
@@ -69,7 +69,7 @@ const articles: Article[] = [
     isRightSection: false,
     title: "Conditions Générales d'Admission",
     subTitle:
-      "Le dossier de candidature doit comprendre :\n\n✓ Demande manuscrite\n✓ Attestation ou photocopie légalisée du diplôme exigé\n✓ Certificat de visite et de contre-visite médical\n✓ Extrait de casier judiciaire\n✓ Extrait d'acte de naissance\n✓ 03 photos d'identité\n✓ Certificat de Nationalité Sénégalaise\n✓ Carte nationale d'identité",
+      "Le dossier de candidature doit comprendre :\n\n✓ Demande manuscrite adressée au Directeur\n✓ Photocopie du ou des diplômes légalisés\n✓ Photocopie légalisée du certificat de nationalité\n✓ 3 photos d'identité\n✓ Extrait de Naissance\n✓ Certificat de visite et contre-visite\n✓ Photocopie légalisée de la carte nationale d’identité\n✓ Fiche de renseignement à remplir",
     img: groupeFacade,
     imgAlt: "Groupe d'étudiants devant le campus ESUP SANTÉ",
     btnExists: true,
@@ -80,7 +80,7 @@ const articles: Article[] = [
 
 const pageTitle: string = `Nos Formations | ${SITE.title}`;
 const metaDescription =
-  "Découvrez nos 3 filières : Licence Sciences Infirmières, Assistant Infirmier, Technicien Supérieur de Santé. Inscriptions ouvertes à Saint-Louis.";
+  "Découvrez nos 3 filières : Licence Sage-femme d'État, Licence Infirmier d'État, Assistant infirmier d'État. Inscriptions ouvertes à Saint-Louis.";
 const ogTitle = "Nos Formations | ESUP SANTÉ";
 ---
 
@@ -142,20 +142,20 @@ const ogTitle = "Nos Formations | ESUP SANTÉ";
   <FeaturesStats
     title="ESUP SANTÉ en chiffres"
     subTitle="Notre engagement envers la qualité et l'excellence se reflète dans chaque promotion. ESUP SANTÉ est dédiée à former les meilleurs professionnels de santé du Sénégal."
-    mainStatTitle="3"
-    mainStatSubTitle="filières professionnelles accréditées par l'État"
+    mainStatTitle="2"
+    mainStatSubTitle="filières professionnelles accréditées par l'ANAQ-SUP"
     stats={[
       {
         stat: "15+",
         description: "années d'expérience en formation santé",
       },
       {
-        stat: "BAC",
-        description: "niveau minimum requis pour les filières principales",
+        stat: "BAC / BFEM",
+        description: "niveau minimum requis pour les filières",
       },
       {
-        stat: "20K",
-        description: "FCFA de frais de stage annuels",
+        stat: "40.000",
+        description: "FCFA de frais liés au stage (frais + kit)",
       },
     ]}
   />

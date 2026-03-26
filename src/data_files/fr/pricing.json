@@ -1,38 +1,63 @@
 {
-  "title": "Tarification Simple et Transparente",
-  "subTitle": "Augmentez l'efficacité avec les plans clairs et axés sur la valeur de ESUP SANTÉ.",
-  "badge": "Meilleure valeur",
-  "thirdOption": "Solutions Entreprise?",
-  "btnText": "Obtenez un Devis Personnalisé",
-
-  "starterKit": {
-    "name": "Kit de Démarrage",
-    "description": "Meilleure option pour les projets de bricolage",
-    "price": "$49",
-    "cents": ".00",
-    "billingFrequency": "USD / mensuel",
-    "features": [
-      "Outils matériels essentiels",
-      "Accès aux guides et tutoriels",
-      "Support standard"
-    ],
-    "purchaseBtnTitle": "Obtenez le Kit de Démarrage",
-    "purchaseLink": "#"
-  },
-
-  "professionalToolbox": {
-    "name": "Boîte à Outils Professionnelle",
-    "description": "Idéale pour les utilisations à grande échelle",
-    "price": "$89",
-    "cents": ".00",
-    "billingFrequency": "USD / mensuel",
-    "features": [
-      "Sélection d'outils premium",
-      "Support prioritaire",
-      "Contenu et offres exclusifs",
-      "Remises sur les commandes en gros"
-    ],
-    "purchaseBtnTitle": "Obtenez la Boîte à Outils Professionnelle",
-    "purchaseLink": "#"
-  }
+  "title": "Filières et Tarifs",
+  "subTitle": "Des formations d'excellence pour construire une carrière solide dans le secteur de la santé au Sénégal.",
+  "badge": "Accrédité ANAQ-SUP",
+  "thirdOption": "Une question sur l'une de nos trois filières ? N'hésitez pas à nous contacter.",
+  "btnText": "Nous contacter",
+  "products": [
+    {
+      "name": "Licence Sage-femme d’État",
+      "description": "Diplôme d'État — BAC — 3 ans",
+      "price": "50.000",
+      "cents": "FCFA",
+      "billingFrequency": "/mois",
+      "isAccredited": true,
+      "features": [
+        "Niveau requis : BAC",
+        "Durée : 3 ans",
+        "Inscription / Réinscription : 100 000 FCFA",
+        "Mensualité : 50 000 FCFA/mois",
+        "Frais de stage : 20 000 FCFA",
+        "Kit de stage : 20 000 FCFA"
+      ],
+      "purchaseBtnTitle": "Candidater",
+      "purchaseLink": "/fr/contact"
+    },
+    {
+      "name": "Licence Infirmier d’État",
+      "description": "Diplôme d'État — BAC — 3 ans",
+      "price": "50.000",
+      "cents": "FCFA",
+      "billingFrequency": "/mois",
+      "isAccredited": true,
+      "features": [
+        "Niveau requis : BAC",
+        "Durée : 3 ans",
+        "Inscription / Réinscription : 100 000 FCFA",
+        "Mensualité : 50 000 FCFA/mois",
+        "Frais de stage : 20 000 FCFA",
+        "Kit de stage : 20 000 FCFA"
+      ],
+      "purchaseBtnTitle": "Candidater",
+      "purchaseLink": "/fr/contact"
+    },
+    {
+      "name": "Assistant infirmier d’État",
+      "description": "Diplôme d'État — BFEM — 2 ans",
+      "price": "40.000",
+      "cents": "FCFA",
+      "billingFrequency": "/mois",
+      "isAccredited": false,
+      "features": [
+        "Niveau requis : BFEM",
+        "Durée : 2 ans",
+        "Inscription / Réinscription : 80 000 FCFA",
+        "Mensualité : 40 000 FCFA/mois",
+        "Frais de stage : 20 000 FCFA",
+        "Kit de stage : 20 000 FCFA"
+      ],
+      "purchaseBtnTitle": "Candidater",
+      "purchaseLink": "/fr/contact"
+    }
+  ]
 }

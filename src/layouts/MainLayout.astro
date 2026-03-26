@@ -42,8 +42,7 @@ interface Props {
       // Script to handle dark mode. It will check if the theme is stored in localStorage or if dark theme is preferred by system settings
       if (
         localStorage.getItem("hs_theme") === "dark" ||
-        (!("hs_theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
+        !("hs_theme" in localStorage)
       ) {
         document.documentElement.classList.add("dark");
       } else {

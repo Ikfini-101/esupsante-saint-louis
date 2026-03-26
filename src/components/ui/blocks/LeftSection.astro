@@ -29,17 +29,16 @@ interface Props {
     draggable={"false"}
     format={"avif"}
   />
-  <!-- The container for title, subtitle, and optional CTA button -->
-  <div class="mt-4 md:mt-0">
+  <div class="mt-4 md:mt-0 p-4 transition duration-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-xl group">
     <!-- The title of the section -->
     <h2
-      class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"
+      class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200 group-hover:text-orange-500 transition-colors duration-300"
     >
       {title}
     </h2>
     <!-- The subtitle of the section -->
     <p
-      class="mb-4 max-w-prose text-pretty font-normal text-neutral-600 dark:text-neutral-400 sm:text-lg"
+      class="mb-4 max-w-prose text-pretty font-normal text-neutral-600 dark:text-neutral-400 sm:text-lg whitespace-pre-line"
     >
       {subTitle}
     </p>

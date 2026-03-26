@@ -3,7 +3,7 @@
   "faqs": [
     {
       "question": "Quels sont les documents nécessaires pour candidater ?",
-      "answer": "Le dossier de candidature doit comprendre : une demande manuscrite, une attestation ou photocopie légalisée du diplôme exigé, un certificat de visite médicale, un extrait de casier judiciaire, un extrait d'acte de naissance, 3 photos d'identité, un certificat de nationalité sénégalaise et une carte nationale d'identité."
+      "answer": "Le dossier de candidature doit comprendre : une demande manuscrite adressée au Directeur, une photocopie du ou des diplômes légalisés, une photocopie légalisée du certificat de nationalité, 3 photos d'identité, un extrait de naissance, un certificat de visite et contre-visite, une photocopie légalisée de la carte nationale d’identité et une fiche de renseignement à remplir."
     },
     {
       "question": "Quand ont lieu les inscriptions ?",
@@ -19,7 +19,7 @@
     },
     {
       "question": "Quel est le niveau requis pour s'inscrire ?",
-      "answer": "Le Baccalauréat est requis pour les filières Licence Sciences Infirmières et Assistant Infirmier. Pour le Technicien Supérieur de Santé, un Diplôme d'État de Sage-Femme ou d'Infirmier est exigé (BAC ou BFEM avec expérience professionnelle de 4 ans)."
+      "answer": "Le Baccalauréat est requis pour les filières Licence Sage-femme d'État et Licence Infirmier d'État (3 ans). Pour la filière Assistant infirmier d'État (2 ans), le niveau BFEM est requis."
     }
   ]
 }
