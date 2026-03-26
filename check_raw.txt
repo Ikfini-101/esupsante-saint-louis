@@ -1,0 +1,105 @@
+﻿[2m05:56:31[22m [34m[content][39m Syncing content
+[2m05:56:31[22m [34m[content][39m Synced content
+[2m05:56:31[22m [34m[types][39m Generated [2m1.11s[22m
+[2m05:56:31[22m [34m[check][39m Getting diagnostics for Astro files in C:\Users\PC\Documents\ESUP SANTE\SITE ESUP SANTE...
+[96msrc/assets/scripts/lenisSmoothScroll.js[0m:[93m7[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'lenis' is declared but its value is never read.
+
+[7m7[0m const lenis = new Lenis({
+[7m [0m [93m      ~~~~~[0m
+
+[96msrc/components/Meta.astro[0m:[93m52[0m:[93m21[0m - [93mwarning[0m[90m ts(6133): [0m'lang' is declared but its value is never read.
+
+[7m52[0m function createHref(lang: string, prefix: string, path: string): string {
+[7m  [0m [93m                    ~~~~[0m
+[96msrc/components/Meta.astro[0m:[93m39[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'basePath' is declared but its value is never read.
+
+[7m39[0m const basePath = Astro.url.pathname;
+[7m  [0m [93m      ~~~~~~~~[0m
+[96msrc/components/Meta.astro[0m:[93m94[0m:[93m7[0m - [93mwarning[0m[90m astro(4000): [0mThis script will be treated as if it has the `is:inline` directive because it contains an attribute. Therefore, features that require processing (e.g. using TypeScript or npm packages in the script) are unavailable.
+
+See docs for more details: https://docs.astro.build/en/guides/client-side-scripts/#script-processing.
+
+Add the `is:inline` directive explicitly to silence this hint.
+
+[7m94[0m       type="application/ld+json"
+[7m  [0m [93m      ~~~~[0m
+
+[96msrc/components/sections/features/FeaturesGeneral.astro[0m:[93m62[0m:[93m37[0m - [93mwarning[0m[90m ts(6133): [0m'i' is declared but its value is never read.
+
+[7m62[0m             {carouselImages.map((_, i) => (
+[7m  [0m [93m                                    ~[0m
+
+[96msrc/components/sections/navbar&footer/FooterSection.astro[0m:[93m37[0m:[93m41[0m - [93mwarning[0m[90m ts(6133): [0m'index' is declared but its value is never read.
+
+[7m37[0m               {section.links.map((link, index) => (
+[7m  [0m [93m                                        ~~~~~[0m
+[96msrc/components/sections/navbar&footer/FooterSection.astro[0m:[93m17[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'crafted' is declared but its value is never read.
+
+[7m17[0m const crafted: string = "Con├ºu par";
+[7m  [0m [93m      ~~~~~~~[0m
+
+[96msrc/components/sections/pricing/PricingSection.astro[0m:[93m22[0m:[93m11[0m - [93mwarning[0m[90m ts(6196): [0m'PricingSectionProps' is declared but never used.
+
+[7m22[0m interface PricingSectionProps {
+[7m  [0m [93m          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/ui/banners/AnnouncementBanner.astro[0m:[93m2[0m:[93m33[0m - [93mwarning[0m[90m ts(6133): [0m'url' is declared but its value is never read.
+
+[7m2[0m const { title, btnId, btnTitle, url } = Astro.props;
+[7m [0m [93m                                ~~~[0m
+[96msrc/components/ui/banners/AnnouncementBanner.astro[0m:[93m2[0m:[93m23[0m - [93mwarning[0m[90m ts(6133): [0m'btnTitle' is declared but its value is never read.
+
+[7m2[0m const { title, btnId, btnTitle, url } = Astro.props;
+[7m [0m [93m                      ~~~~~~~~[0m
+
+[96msrc/components/ui/buttons/Bookmark.astro[0m:[93m18[0m:[93m25[0m - [93mwarning[0m[90m ts(6138): [0mProperty 'dataAttrValue' is declared but its value is never read.
+
+[7m18[0m     constructor(private dataAttrValue: string) {
+[7m  [0m [93m                        ~~~~~~~~~~~~~[0m
+
+[96msrc/components/ui/starlight/Head.astro[0m:[93m2[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'Props' is deprecated.
+
+[7m2[0m import type { Props } from "@astrojs/starlight/props";
+[7m [0m [93m              ~~~~~[0m
+
+[96msrc/components/ui/starlight/MobileMenuFooter.astro[0m:[93m5[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'Props' is deprecated.
+
+[7m5[0m import type { Props } from "@astrojs/starlight/props";
+[7m [0m [93m              ~~~~~[0m
+
+[96msrc/components/ui/starlight/SiteTitle.astro[0m:[93m4[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'Props' is deprecated.
+
+[7m4[0m import type { Props } from "@astrojs/starlight/props";
+[7m [0m [93m              ~~~~~[0m
+
+[96msrc/pages/index.astro[0m:[93m15[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'featureImage' is declared but its value is never read.
+
+[7m15[0m import featureImage from "@images/facade-campus.jpg";
+[7m  [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/fr/formations.astro[0m:[93m123[0m:[93m11[0m - [91merror[0m[90m ts(2322): [0mType '{ title: string; subTitle: string; single: boolean | undefined; imgOne: any; imgOneAlt: string | undefined; imgTwo: any; imgTwoAlt: string | undefined; btnExists: boolean | undefined; btnTitle: string | undefined; btnURL: string | undefined; img: any; imgAlt: string | undefined; }' is not assignable to type 'IntrinsicAttributes & Props'.
+  Property 'img' does not exist on type 'IntrinsicAttributes & Props'.
+
+[7m123[0m           img={program.img}
+[7m   [0m [91m          ~~~[0m
+
+[96msrc/pages/fr/index.astro[0m:[93m15[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'featureImage' is declared but its value is never read.
+
+[7m15[0m import featureImage from "@images/facade-campus.jpg";
+[7m  [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/fr/insights/[id].astro[0m:[93m210[0m:[93m50[0m - [93mwarning[0m[90m ts(6133): [0m'event' is declared but its value is never read.
+
+[7m210[0m   document.addEventListener("DOMContentLoaded", (event) => {
+[7m   [0m [93m                                                 ~~~~~[0m
+
+[96msrc/pages/insights/[id].astro[0m:[93m208[0m:[93m50[0m - [93mwarning[0m[90m ts(6133): [0m'event' is declared but its value is never read.
+
+[7m208[0m   document.addEventListener("DOMContentLoaded", (event) => {
+[7m   [0m [93m                                                 ~~~~~[0m
+
+Result (119 files): 
+- 1 error
+- 0 warnings
+- 18 hints
+
